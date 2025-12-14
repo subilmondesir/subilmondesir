@@ -111,7 +111,7 @@
 
 <br><br>
 
-<img src="https://streak-stats.demolab.com/?user=subilmondesir&theme=radical&ring=FF3E00&fire=FF3E00&currStreakLabel=FF3E00&background=1E1E1E&border=FF3E00&stroke=FF3E00&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=676778" alt="GitHub Streak" width="70%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=subilmondesir&theme=react-dark&bg_color=1E1E1E&color=FF3E00&line=FF6347&point=FFFFFF&area=true&hide_border=false&custom_title=Contribution%20Activity" alt="Contribution Graph" width="96%"/>
 
 </div>
 

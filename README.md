@@ -111,7 +111,7 @@
 
 <br><br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=subilmondesir&theme=radical&ring=FF3E00&fire=FF3E00&currStreakLabel=FF3E00&background=1E1E1E&border=FF3E00&stroke=FF3E00&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=676778" alt="GitHub Streak" width="70%"/>
+<img src="https://streak-stats.demolab.com/?user=subilmondesir&theme=radical&ring=FF3E00&fire=FF3E00&currStreakLabel=FF3E00&background=1E1E1E&border=FF3E00&stroke=FF3E00&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=676778" alt="GitHub Streak" width="70%"/>
 
 </div>
 

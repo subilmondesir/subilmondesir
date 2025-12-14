@@ -11,10 +11,12 @@
 ---
 
 ## <div align="center">🇫🇷 Du design corporate unique aux architectures DAOs post-quantiques</div>
+## <div align="center">🇬🇧 From unique corporate design to post-quantum DAO architectures</div>
 
 <div align="center">
 
 ### J'orchestre la complexité en systèmes vivants exceptionnels.
+### I orchestrate complexity into exceptional living systems.
 
 </div>
 
@@ -117,17 +119,32 @@
 
 ---
 
-## 🎨 EXPERTISE MASTERY
+## 🎭 ORCHESTRATION DE L'EXPERTISE | EXPERTISE ORCHESTRATION
 
 <div align="center">
 
-```text
-Motion Design Architecture   ████████████░░░  90%
-Full-Stack Development        ██████████░░░░░  85%
-DeFi Security Research        ████████░░░░░░░  75%
-AI/ML Engineering             ████████░░░░░░░  70%
-Post-Quantum Cryptography     ██████░░░░░░░░░  60%
-```
+🇫🇷 Je ne mesure pas mes compétences en pourcentages — je les **orchestre en systèmes vivants**.
+
+🇬🇧 I don't measure my skills in percentages — I **orchestrate them into living systems**.
+
+<br>
+
+**Motion Design Architect** × **Full-Stack** × **DeFi Security Architect** × **AI/ML** × **Post-Quantum**
+
+<br>
+
+🇫🇷 Cette **fusion multidomaine** me permet de créer ce qui n'existe pas encore :  
+des architectures où la créativité rencontre la sécurité,  
+où le code devient art, où l'invisible prend vie.
+
+🇬🇧 This **multidomain fusion** allows me to create what doesn't exist yet:  
+architectures where creativity meets security,  
+where code becomes art, where the invisible comes to life.
+
+<br>
+
+*"Artisan du Code Horloger — Précision chirurgicale, vision holistique"*  
+*"Horologist Code Craftsman — Surgical precision, holistic vision"*
 
 </div>
 
@@ -181,9 +198,11 @@ Post-Quantum Cryptography     ██████░░░░░░░░░  60%
 
 <div align="center">
 
-## ✨ Signature Philosophy
+## ✨ Signature Philosophy | Philosophie Signature
 
-### *"Avec précision chirurgicale, j'orchestre l'invisible en œuvres vivantes"*
+### 🇫🇷 *"Avec précision chirurgicale, j'orchestre l'invisible en œuvres vivantes"*
+
+### 🇬🇧 *"With surgical precision, I orchestrate the invisible into living works"*
 
 ![Wave Divider](./assets/wave-divider.svg)
 

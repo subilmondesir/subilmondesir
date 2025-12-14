@@ -1,0 +1,95 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient Background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1E1E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A2A2A;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Svelte Orange Gradient -->
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF3E00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6347;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Wave Path for Animation -->
+    <path id="wavePath" d="M0,150 Q300,100 600,150 T1200,150" fill="none" stroke="url(#orangeGradient)" stroke-width="2" opacity="0.3">
+      <animate attributeName="d" 
+               dur="8s" 
+               repeatCount="indefinite"
+               values="M0,150 Q300,100 600,150 T1200,150;
+                       M0,150 Q300,200 600,150 T1200,150;
+                       M0,150 Q300,100 600,150 T1200,150"/>
+    </path>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Animated Wave Background -->
+  <use href="#wavePath"/>
+  <use href="#wavePath" opacity="0.2" transform="translate(0, 20)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="3" fill="#FF3E00" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="200" r="3" fill="#FF6347" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="50" r="2" fill="#FF3E00" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main Title with Typing Effect -->
+  <text x="600" y="120" font-family="'Courier New', monospace" font-size="42" font-weight="bold" fill="url(#orangeGradient)" text-anchor="middle" filter="url(#glow)">
+    <tspan id="typingText">Architecte de l'Invisible</tspan>
+  </text>
+  
+  <!-- Cursor Animation -->
+  <text x="920" y="120" font-family="'Courier New', monospace" font-size="42" font-weight="bold" fill="#FF3E00">
+    <tspan>|</tspan>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#FFFFFF" text-anchor="middle" opacity="0.9">
+    Visionary Code Architect
+  </text>
+  
+  <!-- Decorative Line -->
+  <line x1="400" y1="185" x2="800" y2="185" stroke="url(#orangeGradient)" stroke-width="2" opacity="0.6">
+    <animate attributeName="x1" values="400;450;400" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="800;750;800" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Bottom Tagline -->
+  <text x="600" y="230" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#676778" text-anchor="middle" font-style="italic">
+    🎨 Artisan du Code Horloger | Precision Craftsman
+  </text>
+  
+  <!-- Corner Accents -->
+  <polyline points="0,0 40,0 40,2 2,2 2,40 0,40" fill="#FF3E00" opacity="0.4"/>
+  <polyline points="1200,0 1160,0 1160,2 1198,2 1198,40 1200,40" fill="#FF3E00" opacity="0.4"/>
+  <polyline points="0,300 40,300 40,298 2,298 2,260 0,260" fill="#FF3E00" opacity="0.4"/>
+  <polyline points="1200,300 1160,300 1160,298 1198,298 1198,260 1200,260" fill="#FF3E00" opacity="0.4"/>
+  
+  <!-- Animated Particles -->
+  <g opacity="0.3">
+    <circle cx="200" cy="150" r="1.5" fill="#FF6347">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="150" r="1.5" fill="#FF3E00">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,20; 0,0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

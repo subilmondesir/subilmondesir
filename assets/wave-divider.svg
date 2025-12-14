@@ -1,0 +1,95 @@
+<svg width="1200" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Svelte Orange Gradient -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF3E00;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF3E00;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="waveGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="80" fill="transparent"/>
+  
+  <!-- Primary Wave -->
+  <path fill="url(#waveGradient)" filter="url(#waveGlow)" opacity="0.6">
+    <animate attributeName="d" 
+             dur="10s" 
+             repeatCount="indefinite"
+             values="
+               M0,40 Q150,20 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z;
+               M0,40 Q150,60 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z;
+               M0,40 Q150,20 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z
+             "/>
+  </path>
+  
+  <!-- Secondary Wave (offset) -->
+  <path fill="#FF3E00" opacity="0.3">
+    <animate attributeName="d" 
+             dur="8s" 
+             repeatCount="indefinite"
+             values="
+               M0,50 Q200,30 400,50 T800,50 T1200,50 L1200,80 L0,80 Z;
+               M0,50 Q200,70 400,50 T800,50 T1200,50 L1200,80 L0,80 Z;
+               M0,50 Q200,30 400,50 T800,50 T1200,50 L1200,80 L0,80 Z
+             "/>
+  </path>
+  
+  <!-- Tertiary Wave (subtle) -->
+  <path fill="#FF6347" opacity="0.2">
+    <animate attributeName="d" 
+             dur="12s" 
+             repeatCount="indefinite"
+             values="
+               M0,35 Q250,25 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z;
+               M0,35 Q250,45 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z;
+               M0,35 Q250,25 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z
+             "/>
+  </path>
+  
+  <!-- Top Line with Glow -->
+  <path d="M0,40 Q300,20 600,40 T1200,40" 
+        stroke="url(#waveGradient)" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.8"
+        filter="url(#waveGlow)">
+    <animate attributeName="d" 
+             dur="10s" 
+             repeatCount="indefinite"
+             values="
+               M0,40 Q300,20 600,40 T1200,40;
+               M0,40 Q300,60 600,40 T1200,40;
+               M0,40 Q300,20 600,40 T1200,40
+             "/>
+  </path>
+  
+  <!-- Floating Particles -->
+  <g opacity="0.5">
+    <circle cx="100" cy="30" r="2" fill="#FF3E00">
+      <animate attributeName="cy" values="30;20;30" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="45" r="1.5" fill="#FF6347">
+      <animate attributeName="cy" values="45;35;45" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="25" r="2" fill="#FF3E00">
+      <animate attributeName="cy" values="25;15;25" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="50" r="1.5" fill="#FF6347">
+      <animate attributeName="cy" values="50;40;50" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

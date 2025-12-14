@@ -51,7 +51,7 @@
 <sub>Vulnerability Research</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/000000/atomic.png" width="60"/><br>
+<img src="https://cdn-icons-png.flaticon.com/512/2999/2999463.png" width="60"/><br>
 <b>Post-Quantum</b><br>
 <sub>Cryptography</sub>
 </td>
@@ -61,7 +61,7 @@
 <sub>Autonomous Systems</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/000000/orchestration.png" width="60"/><br>
+<img src="https://cdn-icons-png.flaticon.com/512/17076/17076872.png" width="60"/><br>
 <b>AI Orchestrator</b><br>
 <sub>Intelligent Coordination</sub>
 </td>
@@ -145,12 +145,12 @@ Post-Quantum Cryptography     ██████░░░░░░░░░  60%
 <sub>Exploring smart contract security</sub>
 </td>
 <td width="25%" align="center">
-<img src="https://img.icons8.com/fluency/96/000000/quantum-physics.png" width="50"/><br>
+<img src="https://cdn-icons-png.flaticon.com/512/14511/14511480.png" width="50"/><br>
 <b>Post-Quantum Studies</b><br>
 <sub>Cryptography for tomorrow</sub>
 </td>
 <td width="25%" align="center">
-<img src="https://img.icons8.com/fluency/96/000000/machine-learning.png" width="50"/><br>
+<img src="https://cdn-icons-png.flaticon.com/512/17917/17917535.png" width="50"/><br>
 <b>AI DAO Frameworks</b><br>
 <sub>Autonomous organizations</sub>
 </td>
@@ -202,3 +202,4 @@ Post-Quantum Cryptography     ██████░░░░░░░░░  60%
 ![Profile Views](https://komarev.com/ghpvc/?username=xarkezion&color=FF3E00&style=for-the-badge&label=PROFILE+VIEWS)
 
 </div>
+

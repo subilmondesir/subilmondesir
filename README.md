@@ -351,7 +351,7 @@ Cortex-Qwen3 & GemmaTRON
 
 <br>
 
-**Forgé avec rigueur en Rust, Deno et sous doctrine CORTEX.**
+**Forgé avec rigueur en Rust, Deno et sous doctrine.**
 
 <sub>Dernière mise à jour : 2026</sub>
 

@@ -1,95 +1,101 @@
-<svg width="1200" height="80" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="80" viewBox="0 0 1200 80" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Svelte Orange Gradient -->
-    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FF3E00;stop-opacity:0.8" />
-      <stop offset="50%" style="stop-color:#FF6347;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#FF3E00;stop-opacity:0.8" />
+    <!-- Or — même identité que le header -->
+    <linearGradient id="waveGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.75"/>
+      <stop offset="50%" style="stop-color:#F5D67A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0.75"/>
     </linearGradient>
-    
-    <!-- Glow Effect -->
-    <filter id="waveGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+
+    <!-- Lueur douce, cohérente avec le header -->
+    <filter id="waveGlow" x="-40%" y="-120%" width="180%" height="340%">
+      <feGaussianBlur stdDeviation="1.8" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Ondulation liquide très subtile — écho discret du liquide du header -->
+    <filter id="liquidWobbleSoft" x="-20%" y="-100%" width="140%" height="300%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.06" numOctaves="1" seed="4" result="n">
+        <animate attributeName="baseFrequency" values="0.010 0.05;0.016 0.07;0.010 0.05" dur="7s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
   </defs>
-  
-  <!-- Background -->
+
+  <!-- Fond transparent — laisse respirer le smoke du README -->
   <rect width="1200" height="80" fill="transparent"/>
-  
-  <!-- Primary Wave -->
-  <path fill="url(#waveGradient)" filter="url(#waveGlow)" opacity="0.6">
-    <animate attributeName="d" 
-             dur="10s" 
-             repeatCount="indefinite"
-             values="
-               M0,40 Q150,20 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z;
-               M0,40 Q150,60 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z;
-               M0,40 Q150,20 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z
-             "/>
+
+  <!-- Vague primaire — or liquide, cycle 10s synchronisé au header -->
+  <path fill="url(#waveGold)" filter="url(#liquidWobbleSoft)" opacity="0.55">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+      values="
+        M0,40 Q150,20 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z;
+        M0,40 Q150,60 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z;
+        M0,40 Q150,20 300,40 T600,40 T900,40 T1200,40 L1200,80 L0,80 Z
+      "/>
   </path>
-  
-  <!-- Secondary Wave (offset) -->
-  <path fill="#FF3E00" opacity="0.3">
-    <animate attributeName="d" 
-             dur="8s" 
-             repeatCount="indefinite"
-             values="
-               M0,50 Q200,30 400,50 T800,50 T1200,50 L1200,80 L0,80 Z;
-               M0,50 Q200,70 400,50 T800,50 T1200,50 L1200,80 L0,80 Z;
-               M0,50 Q200,30 400,50 T800,50 T1200,50 L1200,80 L0,80 Z
-             "/>
+
+  <!-- Vague secondaire — ember, déphasée -->
+  <path fill="#D71F56" opacity="0.22">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+        M0,50 Q200,30 400,50 T800,50 T1200,50 L1200,80 L0,80 Z;
+        M0,50 Q200,70 400,50 T800,50 T1200,50 L1200,80 L0,80 Z;
+        M0,50 Q200,30 400,50 T800,50 T1200,50 L1200,80 L0,80 Z
+      "/>
   </path>
-  
-  <!-- Tertiary Wave (subtle) -->
-  <path fill="#FF6347" opacity="0.2">
-    <animate attributeName="d" 
-             dur="12s" 
-             repeatCount="indefinite"
-             values="
-               M0,35 Q250,25 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z;
-               M0,35 Q250,45 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z;
-               M0,35 Q250,25 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z
-             "/>
+
+  <!-- Vague tertiaire — or clair, très discrète -->
+  <path fill="#F5D67A" opacity="0.14">
+    <animate attributeName="d" dur="12s" repeatCount="indefinite"
+      values="
+        M0,35 Q250,25 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z;
+        M0,35 Q250,45 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z;
+        M0,35 Q250,25 500,35 T1000,35 T1200,35 L1200,80 L0,80 Z
+      "/>
   </path>
-  
-  <!-- Top Line with Glow -->
-  <path d="M0,40 Q300,20 600,40 T1200,40" 
-        stroke="url(#waveGradient)" 
-        stroke-width="2" 
-        fill="none" 
-        opacity="0.8"
-        filter="url(#waveGlow)">
-    <animate attributeName="d" 
-             dur="10s" 
-             repeatCount="indefinite"
-             values="
-               M0,40 Q300,20 600,40 T1200,40;
-               M0,40 Q300,60 600,40 T1200,40;
-               M0,40 Q300,20 600,40 T1200,40
-             "/>
+
+  <!-- Fil supérieur — le trait qui referme le récit du header -->
+  <path d="M0,40 Q300,20 600,40 T1200,40"
+        stroke="url(#waveGold)" stroke-width="1.6" fill="none" opacity="0.75" filter="url(#waveGlow)">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+      values="
+        M0,40 Q300,20 600,40 T1200,40;
+        M0,40 Q300,60 600,40 T1200,40;
+        M0,40 Q300,20 600,40 T1200,40
+      "/>
   </path>
-  
-  <!-- Floating Particles -->
+
+  <!-- Battement central — le tic-tac de l'Horloger, synchronisé au codename du header -->
+  <g transform="translate(600,40)">
+    <rect x="-4" y="-4" width="8" height="8" fill="#D4AF37" stroke="#D71F56" stroke-width="0.6"
+          transform="rotate(45)" filter="url(#waveGlow)">
+      <animateTransform attributeName="transform" type="scale" values="1;1.6;1" dur="1.6s"
+                         repeatCount="indefinite" additive="sum"/>
+      <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Particules flottantes -->
   <g opacity="0.5">
-    <circle cx="100" cy="30" r="2" fill="#FF3E00">
+    <circle cx="100" cy="30" r="2" fill="#D4AF37">
       <animate attributeName="cy" values="30;20;30" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="400" cy="45" r="1.5" fill="#FF6347">
+    <circle cx="400" cy="45" r="1.5" fill="#D71F56">
       <animate attributeName="cy" values="45;35;45" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.85;0.4" dur="5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="700" cy="25" r="2" fill="#FF3E00">
+    <circle cx="700" cy="25" r="2" fill="#D4AF37">
       <animate attributeName="cy" values="25;15;25" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="6s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1000" cy="50" r="1.5" fill="#FF6347">
+    <circle cx="1000" cy="50" r="1.5" fill="#D71F56">
       <animate attributeName="cy" values="50;40;50" dur="4.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.85;0.4" dur="4.5s" repeatCount="indefinite"/>
     </circle>
   </g>
 </svg>

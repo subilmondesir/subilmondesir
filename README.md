@@ -51,26 +51,74 @@ CORTEX dépasse le cadre du simple outil : il s'agit d'une doctrine matérialis�
 
 </div>
 
-<table align="center">
-<tr>
-<td align="center" width="25%">
-<b>◈ VITRA</b><br>
-<sub>Fabrique de vitrines marchandes<br>souveraines (instance-zéro déployée)</sub>
-</td>
-<td align="center" width="25%">
-<b>🜂 [ViTRA]_∴_OSiNT</b><br>
-<sub>Moteur OSINT Rust, WASM et Deno<br>frontière éthique structurelle et non déclarative</sub>
-</td>
-<td align="center" width="25%">
-<b>🧾 KXSIRH_Brain</b><br>
-<sub>SIRH souverain multi-tenant<br>50K+ collaborateurs, tri-couche cognitive</sub>
-</td>
-<td align="center" width="25%">
-<b>⚔️ SANKORiA</b><br>
-<sub>Harnais CLI Rust<br>Agents Autonomes | Architecture ReAct | Gouvernance</sub>
-</td>
-</tr>
-</table>
+
+<div align="center" style="margin: 40px 0;">
+
+<!-- Titre Section CORTEX -->
+<h3 style="letter-spacing: 3px; color: #D4AF37; font-weight: 300; font-size: 18px; margin-bottom: 32px;">
+  ÉCOSYSTÈME CORTEX
+</h3>
+
+<!-- Grille 4 Piliers -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; padding: 0 16px;">
+
+  <!-- VITRA -->
+  <div style="padding: 24px; border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 8px; background: rgba(30, 30, 30, 0.8); backdrop-filter: blur(8px); transition: all 0.3s ease;">
+    <p style="color: #D4AF37; font-size: 14px; letter-spacing: 2px; margin: 0 0 8px 0;">
+      ◈ VITRA
+    </p>
+    <p style="color: #FFFFFF; font-size: 13px; line-height: 1.6; margin: 0; font-weight: 500;">
+      Fabrique de vitrines marchandes souveraines
+    </p>
+    <p style="color: #AAAAAA; font-size: 11px; line-height: 1.5; margin-top: 8px; margin-bottom: 0;">
+      Instance-zéro déployée
+    </p>
+  </div>
+
+  <!-- VITRA_∴_OSiNT -->
+  <div style="padding: 24px; border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 8px; background: rgba(30, 30, 30, 0.8); backdrop-filter: blur(8px); transition: all 0.3s ease;">
+    <p style="color: #D4AF37; font-size: 14px; letter-spacing: 2px; margin: 0 0 8px 0;">
+      🜂 [ViTRA]_∴_OSiNT
+    </p>
+    <p style="color: #FFFFFF; font-size: 13px; line-height: 1.6; margin: 0; font-weight: 500;">
+      Moteur OSINT Rust, WASM et Deno
+    </p>
+    <p style="color: #AAAAAA; font-size: 11px; line-height: 1.5; margin-top: 8px; margin-bottom: 0;">
+      Frontière éthique structurelle et non déclarative
+    </p>
+  </div>
+
+  <!-- KXSIRH_Brain -->
+  <div style="padding: 24px; border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 8px; background: rgba(30, 30, 30, 0.8); backdrop-filter: blur(8px); transition: all 0.3s ease;">
+    <p style="color: #D4AF37; font-size: 14px; letter-spacing: 2px; margin: 0 0 8px 0;">
+      🧾 KXSIRH_Brain
+    </p>
+    <p style="color: #FFFFFF; font-size: 13px; line-height: 1.6; margin: 0; font-weight: 500;">
+      SIRH souverain multi-tenant
+    </p>
+    <p style="color: #AAAAAA; font-size: 11px; line-height: 1.5; margin-top: 8px; margin-bottom: 0;">
+      50K+ collaborateurs, tri-couche cognitive
+    </p>
+  </div>
+
+  <!-- SANKORiA -->
+  <div style="padding: 24px; border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 8px; background: rgba(30, 30, 30, 0.8); backdrop-filter: blur(8px); transition: all 0.3s ease;">
+    <p style="color: #D4AF37; font-size: 14px; letter-spacing: 2px; margin: 0 0 8px 0;">
+      ⚔️ SANKORiA
+    </p>
+    <p style="color: #FFFFFF; font-size: 13px; line-height: 1.6; margin: 0; font-weight: 500;">
+      Harnais CLI Rust
+    </p>
+    <p style="color: #AAAAAA; font-size: 11px; line-height: 1.5; margin-top: 8px; margin-bottom: 0;">
+      Agents Autonomes | Architecture ReAct | Gouvernance
+    </p>
+  </div>
+
+</div>
+
+</div>
+
+
 
 ---
 
@@ -378,7 +426,7 @@ de services propriétaires et de refuser l'importation de technologies opaques.
 
 <br>
 
-**Forgé avec rigueur en Rust, Deno et sous doctrine CORTEX.**
+**Forgé avec rigueur en Rust, Deno et sous doctrine.**
 
 <sub>Dernière mise à jour : 2026</sub>
 
